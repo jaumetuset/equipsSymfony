@@ -1,6 +1,7 @@
 inici:
  path: /
  controller: App\Controller\IniciController::inici
+ 
 
 controllers:
     resource: ../src/Controller/
