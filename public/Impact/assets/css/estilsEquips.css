@@ -1,33 +1,88 @@
-body {
-    background-color: #DDD;
-}
-
-h1#titolInici {
+body{
+    background-color: red;
+ }
+ 
+ 
+ h1#titolInici{
     width: 50%;
     color: red;
-    border: solid red 1px;
     margin: 10px auto;
     text-align: center;
     padding: 10px;
     background-color: white;
-}
-
-p#paragrafInici {
+    border: 2px solid red;
+ }
+ 
+ 
+ 
+ 
+ p#paragrafInici{
     width: 80%;
-    border: solid black 1px;
+    border: 1px solid black;
     margin: 10px auto;
     text-align: center;
     padding: 10px;
     background-color: #f2e7c3;
-}
-
-.imatgeInici {
+ }
+ 
+ 
+ .imatgeInici{
     width: 400px;
+    margin: 10px;
+ }
+ 
+ 
+ div#paragrafInici{
+    width: 80%;
+    border: 1px solid black;
     margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2e7c3;
+ }
+ 
+ 
+ div#paragrafInici li{
+    list-style: none;
+ }
+ 
+ 
+ div#paragrafInici ul{
+    margin: auto;
+    width: 35%;
+ }
+ 
+ 
+ div#paragrafInici ul li{
+    padding: 1%;
+    border: 2px solid black;
+    background-color: #f2db98;
+ }
+ 
+ 
+ div#paragrafInici ul li a{
+    border: 2px solid black;
+    background-color: lightgrey;
     display: block;
-}
+    width: 50%;
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+ 
+ 
+ }
+ 
+ 
+ p#no_trobat{
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+ }
+ 
 
-.encabezado {
+ .encabezado {
     background-color: green;
 }
 
@@ -92,3 +147,13 @@ h2#titolSecundari {
     padding: 10px;
     background-color: white;
 }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -5,7 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>
-    {% block title %} Bootstrap Template - Index {% endblock %}
+    {% block title %} Bootstrap - Index {% endblock %}
   </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -14,23 +14,27 @@
     {{ encore_entry_link_tags('app') }}
   {% endblock %}
 
+  {% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+  {% endblock %} 
+
   <!-- Favicons -->
-  <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{ asset('Impact/assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ asset('Impact/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="{{ asset('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i') }}" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ asset('assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('Impact/assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('Impact/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('Impact/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('Impact/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('Impact/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('Impact/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ asset('assets/css/navbar.css') }}" rel="stylesheet">
+  <link href="{{ asset('Impact/assets/css/navbar.css') }}" rel="stylesheet">
 </head>
 <body>
   {% block header %}
@@ -40,21 +44,18 @@
           <h3>EQUIPS</h3>
         </div>
           <ul class="nav">
-            <li><a href="{{ path('inici') }}  ">Inici</a></li>
-            <li><a href="#">Equips</a></li>
+            <li><a href="{{ path('inici') }} ">Inici</a></li>
+            <li><a href="{{ path('dades_equip') }} ">Equips</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Blog</a></li>
               <li><a href="#">Dades</a>
                 <ul>
-                    <li><a href="#">Usuaris</a></li>
                     <li><a href="#">Inserir</a>
                         <ul>
                             <li><a href="#">Equip </a></li>
                             <li><a href="#">Multiples Equips</a></li>
-                            <li><a href="#">Membre </a></li>
-                            <li><a href="#">Usuari</a></li>
                         </ul>                        
                     </li>
                 </ul>  
@@ -85,17 +86,12 @@
      {% endblock %}
   </footer>
   <!-- End Footer -->
-  
-  {% block javascripts %}
-    {{ encore_entry_script_tags('app') }}
-  {% endblock %} 
-  
-  <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-  <script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
-  <script src="{{ asset('assets/js/main.js')}}"></script>
+
+  <script src="{{asset('Impact/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('Impact/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('Impact/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('Impact/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{ asset('Impact/assets/js/main.js')}}"></script>
 
 </body>
 

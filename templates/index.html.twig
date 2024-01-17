@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Equips{% endblock %}
+
+{% block stylesheets %}
+ {{ encore_entry_link_tags('app') }}
+    <link href="{{ asset('Impact/assets/css/estilsInici.css') }}" rel="stylesheet" />
+ {% endblock %}
+
+{% block body %}
+    <h1 id="titolInici">Projecte Symfony Equips 2n DAW</h1>
+    <p id="paragrafInici">Inici programa gestió d'equips i membres del projecte 2n DAW <br> IES Lluis Simarro <br> Curs 23/24 </p>
+    <img src="{{ asset('Impact/assets/img/home.jpeg') }}" class="imatgeInici" />
+{% endblock %}
