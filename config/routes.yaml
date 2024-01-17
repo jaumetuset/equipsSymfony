@@ -6,3 +6,4 @@ inici:
 controllers:
     resource: ../src/Controller/
     type: attribute
+
